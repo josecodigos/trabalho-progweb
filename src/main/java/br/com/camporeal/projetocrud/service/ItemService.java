@@ -44,12 +44,12 @@ public class ItemService {
     public Item alterarItem(Request request, int id){
         Item item = itemRepository.findById(id).orElse(null);
 
-        item.setNome(request.getNome());
-        item.setQuantidade(request.getQuantidade());
-        item.setDescricao(request.getDescricao());
-
-        item = itemRepository.save(item);
-        return item;
+        if (item == null) {
+            return item;
+        }else{
+            salvarItem(request);
+            return item;
+        }
     }
 
     public boolean excluirItem(Integer id){

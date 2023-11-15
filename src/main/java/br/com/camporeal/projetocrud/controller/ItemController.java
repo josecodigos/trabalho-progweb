@@ -27,7 +27,7 @@ public class ItemController {
     @GetMapping
     public ResponseEntity<List<Item>> retornaListaItens() {
 
-        if(itemService.getListaTodosItens() == null){
+        if(itemService.getListaTodosItens().isEmpty()){
             return new ResponseEntity<>(itemService.getListaTodosItens(), HttpStatus.NOT_FOUND);
         }else{
             return new ResponseEntity<>(itemService.getListaTodosItens(), HttpStatus.OK);

@@ -8,11 +8,11 @@
 		<version>2.7.17</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.atividade</groupId>
-	<artifactId>progweb</artifactId>
+	<groupId>br.com.camporeal</groupId>
+	<artifactId>projetocrud</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>progweb</name>
-	<description>Demo project for Spring Boot</description>
+	<name>projetocrud</name>
+	<description>Projeto com conexão ao Banco de Dados e endpoints CRUD</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -55,9 +55,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<image>
-						<builder>paketobuildpacks/builder-jammy-base:latest</builder>
-					</image>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>

@@ -1,13 +1,13 @@
-package com.atividade.progweb;
+package br.com.camporeal.projetocrud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProgwebApplication {
+public class ProjetocrudApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProgwebApplication.class, args);
+		SpringApplication.run(ProjetocrudApplication.class, args);
 	}
 
 }

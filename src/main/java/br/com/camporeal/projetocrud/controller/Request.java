@@ -6,5 +6,10 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Request {
-    private String titulo;
+
+    private String nome;
+
+    private int quantidade;
+
+    private String descricao;
 }

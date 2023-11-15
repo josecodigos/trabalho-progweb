@@ -1,7 +1,5 @@
 package br.com.camporeal.projetocrud.model;
 
-import java.sql.Timestamp;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,14 +12,16 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "tarefa")
-public class Tarefa {
+@Table(name = "Itens")
+public class Item {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String titulo;
+    private String nome;
 
-    private Timestamp dataCriacao;
+    private int quantidade;
+
+    private String descricao;
 }

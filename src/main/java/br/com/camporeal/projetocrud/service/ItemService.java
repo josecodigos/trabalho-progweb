@@ -47,7 +47,12 @@ public class ItemService {
         if (item == null) {
             return item;
         }else{
-            salvarItem(request);
+            item.setNome(request.getNome());
+            item.setQuantidade(request.getQuantidade());
+            item.setDescricao(request.getDescricao());
+
+            item = itemRepository.save(item);
+            
             return item;
         }
     }
